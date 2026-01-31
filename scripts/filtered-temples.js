@@ -81,14 +81,14 @@ const temples = [
     location: "Guatemala City, Guatemala",
     dedicated: "1984, December, 14",
     area: 11610,
-    imageUrl: "https://www.churchofjesuschrist.org/imgs/ed1ed51c7d1b0dfa3fec7decafbc373297df3cd3/full/1280%2C/0/default"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/guatemala-city-guatemala/400x250/guatemala-city-temple-lds-823544-wallpaper.jpg"
   },
   {
     templeName: "Cobán Guatemala",
     location: "Cobán, Guatemala",
     dedicated: "2024, June, 9",
     area: 8800,
-    imageUrl: "https://www.churchofjesuschrist.org/imgs/4b129a33b4b311ee9c99eeeeac1e820ae5a7a3bb/full/640%2C/0/default"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/coban-guatemala/400x250/coban_guatemala_temple_exterior.jpeg"
   }
 ];
 
@@ -116,7 +116,7 @@ const oldLink = document.querySelector("#old");
 const newLink = document.querySelector("#new");
 const largeLink = document.querySelector("#large");
 const smallLink = document.querySelector("#small");
-const mainHeading = document.querySelector("main h2");
+const mainHeading = document.querySelector("main h1");
 
 homeLink.addEventListener("click", () => {
     createTempleCard(temples);
