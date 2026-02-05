@@ -3,46 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Plan | Civic Si Tuner Hub</title>
+    <title>Honda Hub | Website Plan</title>
     <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/siteplan.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Website Planning Document</h1>
-        <p>Author: Jerson Porras</p>
+        <h2>Jerson Jose Manuel Porras Rosales | WDD 131</h2>
     </header>
+
     <main>
         <section>
-            <h2>Site Name</h2>
-            <p>Civic Si Tuner Hub</p>
+            <h3>Site Name</h3>
+            <p><strong>Proposed Name:</strong> Honda Hub</p>
+            <p><strong>Reason:</strong> This name is short, memorable, and clearly indicates that the site is a central gathering place for information regarding Honda vehicles.</p>
         </section>
+
+        <hr>
+
         <section>
-            <h2>Site Purpose</h2>
-            <p>To provide a dedicated resource for 2012 Honda Civic Si enthusiasts focusing on performance modifications and troubleshooting.</p>
+            <h3>Site Purpose</h3>
+            <p>The purpose of this site is to provide a visual gallery and technical specifications for Honda enthusiasts. It will feature specific models, highlighting their history, performance stats, and modifications.</p>
         </section>
+
+        <hr>
+
         <section>
-            <h2>Scenarios</h2>
-            <ul>
-                <li>How do I address a rich fuel mixture issue with a K&N intake?</li>
-                <li>What is the process for fixing a parasitic battery drain from the CANBUS decoder?</li>
+            <h3>Scenarios</h3>
+            <p>These are questions my target audience would ask:</p>
+            <ul class="scenarios">
+                <li>"What are the horsepower differences between the Civic Si and the Type R?"</li>
+                <li>"Where can I find a gallery of modified vintage Hondas for inspiration?"</li>
             </ul>
         </section>
+
+        <hr>
+
         <section>
-            <h2>Color Schema</h2>
-            <p>Primary: #CC0000 (Red) - Headings and Buttons</p>
-            <p>Secondary: #1A1A1A (Black) - Backgrounds and Accents</p>
+            <h3>Color Schema</h3>
+            <p>This site features a high-energy palette reflecting the Honda branding.</p>
+            <p>
+                <strong>Palette Usage:</strong><br>
+                - Primary (Red): Used for Main Headings and Action Buttons.<br>
+                - Secondary (Dark Grey): Used for Navigation bars and Footers.<br>
+                - Accent (Light Grey): Used for backgrounds and content sectioning.
+            </p>
+            
+            <div class="color-palette">
+                <div class="swatch primary">
+                    <span>Primary</span>
+                    <span>#CC0000</span>
+                </div>
+                <div class="swatch secondary">
+                    <span>Secondary</span>
+                    <span>#333333</span>
+                </div>
+                <div class="swatch accent">
+                    <span>Accent</span>
+                    <span>#F4F4F4</span>
+                </div>
+            </div>
         </section>
+
+        <hr>
+
         <section>
-            <h2>Typography</h2>
-            <p>Font: Roboto, sans-serif (Headings and Body)</p>
+            <h3>Typography</h3>
+            <div class="typography-example">
+                <h4>Heading Font: 'Roboto'</h4>
+                <p class="font-heading-example">The quick brown fox jumps over the lazy dog.</p>
+                <p>Used for: Main headers, navigation links, and article titles.</p>
+                
+                <h4>Body Font: 'Open Sans'</h4>
+                <p class="font-body-example">The quick brown fox jumps over the lazy dog.</p>
+                <p>Used for: Paragraph text, lists, and descriptions.</p>
+            </div>
         </section>
+
+        <hr>
+
         <section>
-            <h2>Wireframes</h2>
-            <p>Mobile and Desktop views follow a standard PARC design principle layout.</p>
+            <h3>Project Visual Assets</h3>
+            <p>Example images intended for the site gallery or hero section.</p>
+            <div class="asset-container">
+                <img src="images/honda.jpg" alt="Red Honda Civic front view" class="asset-img">
+                <img src="images/honda2.jpg" alt="Red Honda Civic side view" class="asset-img">
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Wireframes</h3>
+            <p>[Wireframe sketches to be added later]</p>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2026 Jerson Porras | Guatemala City</p>
+        <p>
+            &copy; <span id="currentyear"></span> Jerson Jose Manuel Porras Rosales <br>
+            Guatemala City, Guatemala
+        </p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>
