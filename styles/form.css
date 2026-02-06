@@ -1,0 +1,95 @@
+:root {
+    --primary-bg: #2e002e;
+    --form-bg: #d1cbd1;
+    --text-color: #000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: var(--primary-bg);
+    color: white;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.review-form {
+    background-color: var(--form-bg);
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.required-star {
+    color: #b30000;
+    margin-left: 2px;
+}
+
+select, input[type="date"], input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #777;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stars label, .features-container label {
+    display: block;
+    padding: 4px 0;
+    font-weight: normal;
+}
+
+input[type="submit"] {
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #444;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #e0e0e0;
+}
+
+footer {
+    background-color: var(--primary-bg);
+    color: white;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
