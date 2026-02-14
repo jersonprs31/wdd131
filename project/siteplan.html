@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Honda Hub | Website Plan</title>
-    <meta name="description" content="Website planning document for Honda Hub, a resource for Honda enthusiasts featuring model specifications, history, and a visual gallery of modified vehicles.">
+    <meta name="description" content="Website planning document for Honda Hub, a resource for Honda enthusiasts.">
     <meta name="author" content="Jerson Jose Manuel Porras Rosales">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +14,15 @@
 </head>
 <body>
     <header>
-        <h1>Website Planning Document</h1>
-        <h2>Jerson Jose Manuel Porras Rosales | WDD 131</h2>
+        <div class="header-content">
+            <h1>Website Planning Document</h1>
+            <h2>Jerson Jose Manuel Porras Rosales | WDD 131</h2>
+        </div>
+        <nav>
+            <a href="siteplan.html" class="active">Home</a>
+            <a href="form.html">Review Form</a>
+            <a href="references.html">References</a>
+        </nav>
     </header>
 
     <main>
@@ -98,6 +105,17 @@
         </section>
 
         <hr>
+        
+        <section>
+            <h3>Wireframes</h3>
+            <div class="wireframe-description">
+                <h4>Mobile View Layout</h4>
+                <p>The mobile view prioritizes a single-column layout for scrolling efficiency on smaller screens. The header includes the 'Honda Hub' logo centered with a simplified navigation menu below it.</p>
+                
+                <h4>Desktop View Layout</h4>
+                <p>The desktop view expands to a max-width of 960px. The navigation bar sits inline with the logo at the top right. The content utilizes a two-column grid layout where appropriate.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -105,6 +123,7 @@
             &copy; <span id="currentyear"></span> Jerson Jose Manuel Porras Rosales <br>
             Guatemala City, Guatemala
         </p>
+        <p><a href="references.html">View References</a></p>
         <p id="lastModified"></p>
     </footer>
 </body>
