@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda Hub | Leave a Review</title>
+    <meta name="description" content="Join the Honda Hub community by reviewing your favorite Honda model.">
+    <meta name="author" content="Jerson Jose Manuel Porras Rosales">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Honda Hub</h1>
+        <nav>
+            <a href="siteplan.html">Home</a>
+            <a href="form.html">Review</a>
+            <a href="references.html">References</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Rate a Model</h2>
+        <div class="form-container">
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" required>
+                    
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Vehicle Information</legend>
+                    <label for="honda-model">Select Model</label>
+                    <select id="honda-model" name="honda-model" required>
+                        <option value="" disabled selected>Choose a Honda...</option>
+                    </select>
+
+                    <label>Modification Level</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="mod-level" value="stock"> Stock</label>
+                        <label><input type="radio" name="mod-level" value="light"> Light Mods</label>
+                        <label><input type="radio" name="mod-level" value="heavy"> Heavy Mods</label>
+                    </div>
+
+                    <label>Top Features</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="features" value="vtec"> VTEC Engine</label>
+                        <label><input type="checkbox" name="features" value="turbo"> Turbocharged</label>
+                        <label><input type="checkbox" name="features" value="aero"> Aerodynamics</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Review</legend>
+                    <label for="review">Written Review</label>
+                    <textarea id="review" name="review" rows="4"></textarea>
+                </fieldset>
+
+                <input type="submit" value="Submit Review" class="submit-btn">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Jerson Jose Manuel Porras Rosales</p>
+        <p>Total Reviews Submitted: <span id="review-counter">0</span></p>
+    </footer>
+</body>
+</html>

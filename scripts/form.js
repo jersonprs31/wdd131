@@ -1,21 +1,44 @@
-const products = [
-    { id: "fc-1888", name: "flux capacitor", averagerating: 4.5 },
-    { id: "fc-2050", name: "power laces", averagerating: 4.7 },
-    { id: "fs-1987", name: "time circuits", averagerating: 3.5 },
-    { id: "ac-2000", name: "low voltage reactor", averagerating: 3.9 },
-    { id: "jj-1969", name: "warp equalizer", averagerating: 5.0 }
+const hondaModels = [
+  { id: "civic-type-r", name: "Honda Civic Type R" },
+  { id: "civic-si", name: "Honda Civic Si" },
+  { id: "accord-sport", name: "Honda Accord Sport" },
+  { id: "s2000", name: "Honda S2000" },
+  { id: "nsx", name: "Honda NSX" },
+  { id: "integra", name: "Honda Integra Type R" }
 ];
 
-const productSelect = document.getElementById("product-name");
+document.addEventListener("DOMContentLoaded", () => {
+    populateModelSelect();
+    displayReviewCount();
+    setFooterYear();
+});
 
-if (productSelect) {
-    products.forEach(product => {
-        const option = document.createElement("option");
-        option.value = product.id;
-        option.textContent = product.name;
-        productSelect.appendChild(option);
-    });
+function populateModelSelect() {
+    const selectElement = document.getElementById("honda-model");
+    
+    const optionsHTML = hondaModels.map(model => 
+        `<option value="${model.id}">${model.name}</option>`
+    ).join("");
+
+    selectElement.innerHTML += optionsHTML;
 }
 
-document.getElementById("currentyear").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = "Last Modification: " + document.lastModified;
+function displayReviewCount() {
+    let reviewCount = localStorage.getItem("hondaHubReviewCount");
+
+    if (!reviewCount) {
+        reviewCount = 0;
+    }
+
+    const counterElement = document.getElementById("review-counter");
+    if (counterElement) {
+        counterElement.textContent = reviewCount;
+    }
+}
+
+function setFooterYear() {
+    const yearSpan = document.getElementById("currentyear");
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+}

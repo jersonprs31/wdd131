@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <style>
+        .thank-you-container {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Honda Hub</h1>
+        <nav>
+            <a href="siteplan.html">Home</a>
+            <a href="form.html">Review</a>
+        </nav>
+    </header>
+    <main class="thank-you-container">
+        <h2>Thank you for your feedback!</h2>
+        <p>Your review has been recorded and helps the community grow.</p>
+        <a href="form.html" class="btn">Submit Another Review</a>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Jerson Jose Manuel Porras Rosales</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        let currentCount = localStorage.getItem("hondaHubReviewCount");
+        if (!currentCount) {
+            currentCount = 0;
+        }
+        currentCount = parseInt(currentCount) + 1;
+        localStorage.setItem("hondaHubReviewCount", currentCount);
+    </script>
+</body>
+</html>
